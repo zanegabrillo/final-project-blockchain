@@ -1,8 +1,16 @@
-# React + Vite
+# final-project-blockchain
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PROJECT TITLE
+-Multi-Node Blockchain Voting System
 
-Currently, two official plugins are available:
+OVERVIEW
+-The Multi-Node Blockchain Voting System is a decentralized voting app designed to demonstrate how blockchain technology improves the transparency, and reliability of digital voting. Instead of relying on a single centralized database, the system uses multiple independent nodes that each maintain a copy of the blockchain ledger. Each vote is stored as a blockchain transaction, and all nodes synchronize using a simple consensus mechanism to ensure that every copy of the ledger remains consistent and immutable.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+OBJECTIVES
+-Demonstrate the core concepts of blockchain in a voting system.
+-Show how decentralization protects voting records from unauthorized modification.
+-Implement a simple consensus mechanism for synchronizing multiple blockchain nodes.
+-Integrate Cardano blockchain transactions for secure vote recording.
+
+
+
