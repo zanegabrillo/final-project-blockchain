@@ -1,105 +1,145 @@
-function voting() {
+import CandidateCard from "../components/cards/CandidateCard";
+import "../styles/voting.css";
+
+
+function Voting() {
+
 
     return (
 
-        <div>
-
-            <h1>
-                Voting Portal
-            </h1>
+        <div className="voting-page">
 
 
-            <p>
-                Submit your vote to a blockchain node.
-            </p>
+            <div className="voting-header">
 
 
-            <div>
+                <h1>
+                    Cast Your Vote
+                </h1>
+
+
+                <p>
+                    Submit your vote securely through the decentralized blockchain network.
+                </p>
+
+
+            </div>
+
+
+
+            <div className="voter-section">
+
+
+                <h2>
+                    Voter Information
+                </h2>
+
 
                 <label>
-                    Voter ID:
+                    Voter ID
                 </label>
 
-                <br />
 
-                <input 
+                <input
                     type="text"
                     placeholder="Enter voter ID"
                 />
 
-            </div>
-
-
-            <br />
-
-
-            <div>
-
-                <label>
-                    Select Candidate:
-                </label>
-
-                <br />
-
-                <select>
-
-                    <option>
-                        Candidate A
-                    </option>
-
-                    <option>
-                        Candidate B
-                    </option>
-
-                    <option>
-                        Candidate C
-                    </option>
-
-                </select>
-
 
             </div>
 
 
-            <br />
 
 
-            <div>
-
-                <label>
-                    Select Node:
-                </label>
-
-                <br />
+            <h2>
+                Select Candidate
+            </h2>
 
 
-                <select>
 
-                    <option>
-                        Node 1
-                    </option>
-
-                    <option>
-                        Node 2
-                    </option>
-
-                    <option>
-                        Node 3
-                    </option>
+            <div className="candidate-container">
 
 
-                </select>
+                <CandidateCard
+
+                    candidate="Candidate A"
+
+                    party="Blockchain Innovation Party"
+
+                    description="Focused on improving blockchain technology and digital security."
+
+                />
+
+
+
+                <CandidateCard
+
+                    candidate="Candidate B"
+
+                    party="Digital Future Party"
+
+                    description="Focused on technology advancement and digital transformation."
+
+                />
+
+
+
+                <CandidateCard
+
+                    candidate="Candidate C"
+
+                    party="Technology Advancement Party"
+
+                    description="Focused on innovation and decentralized solutions."
+
+                />
 
 
             </div>
 
 
-            <br />
 
 
-            <button>
-                Cast Vote
+            <div className="transaction-preview">
+
+
+                <h2>
+                    Transaction Preview
+                </h2>
+
+
+                <p>
+                    Selected Candidate:
+                    {" "}
+                    None
+                </p>
+
+
+                <p>
+                    Target Node:
+                    {" "}
+                    Node 1
+                </p>
+
+
+                <p>
+                    Blockchain Status:
+                    {" "}
+                    Ready
+                </p>
+
+
+            </div>
+
+
+
+
+            <button className="submit-vote">
+
+                Submit Vote
+
             </button>
+
 
 
         </div>
@@ -109,4 +149,4 @@ function voting() {
 }
 
 
-export default voting;
+export default Voting;

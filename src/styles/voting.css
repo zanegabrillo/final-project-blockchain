@@ -1,0 +1,196 @@
+.voting-page {
+
+    padding: 40px 40px;
+
+}
+
+
+
+.voting-header {
+
+    margin-bottom: 30px;
+
+}
+
+
+.voting-header h1 {
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.voting-header p {
+
+    color: #94a3b8;
+
+    font-size: 15px;
+
+}
+
+
+.voter-section {
+
+    background: #172554;
+
+    padding: 17px;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.voter-section h2 {
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.voter-section label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+
+}
+
+
+.voter-section input {
+
+    padding: 10px;
+
+    width: 260px;
+
+    border-radius: 8px;
+
+    border: none;
+
+}
+
+
+.candidate-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin: 15px 0 25px;
+
+}
+
+
+
+.candidate-card {
+
+    background: #172554;
+
+    border: 1px solid #334155;
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+}
+
+
+
+.candidate-card h2 {
+
+    font-size: 18px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.candidate-card h3 {
+
+    color: #60a5fa;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+
+}
+
+
+
+.candidate-card p {
+
+    color: #cbd5e1;
+
+    font-size: 12px;
+
+    min-height: 35px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.candidate-card input {
+
+    margin-right: 8px;
+
+}
+
+
+
+.transaction-preview {
+
+    background: #0f172a;
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.transaction-preview h2 {
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.transaction-preview p {
+
+    color: #cbd5e1;
+
+    font-size: 13px;
+
+    margin: 6px 0;
+
+}
+
+
+.submit-vote {
+
+    padding: 10px 30px;
+
+    border-radius: 8px;
+
+    border: none;
+
+    cursor: pointer;
+
+}
