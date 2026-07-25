@@ -1,63 +1,172 @@
-function results() {
+import ResultCard from "../components/cards/ResultCard";
+import "../styles/results.css";
+
+
+function Results() {
 
 
     return (
 
-        <div>
-
-
-            <h1>
-                Election Results
-            </h1>
-
-
-            <p>
-                Current voting results from blockchain records.
-            </p>
+        <div className="results-page">
 
 
 
-            <div>
+            <div className="results-header">
 
 
-                <h2>
-                    Vote Count
-                </h2>
+                <h1>
+                    Election Results
+                </h1>
 
 
                 <p>
-                    Candidate A:
-                    15 votes
+                    Final voting outcome verified through the blockchain network.
                 </p>
-
-
-                <p>
-                    Candidate B:
-                    10 votes
-                </p>
-
-
-                <p>
-                    Candidate C:
-                    5 votes
-                </p>
-
 
 
             </div>
 
 
-            <hr />
 
 
-            <h2>
-                Network Verification
-            </h2>
 
 
-            <p>
-                ✅ Results verified by all nodes
-            </p>
+            <div className="results-container">
+
+
+                <ResultCard
+
+                    candidate="Candidate A"
+
+                    votes="120"
+
+                    percentage="45%"
+
+                />
+
+
+
+                <ResultCard
+
+                    candidate="Candidate B"
+
+                    votes="95"
+
+                    percentage="35%"
+
+                />
+
+
+
+                <ResultCard
+
+                    candidate="Candidate C"
+
+                    votes="55"
+
+                    percentage="20%"
+
+                />
+
+
+            </div>
+
+
+
+
+
+
+            <div className="verification-card">
+
+
+                <h2>
+                    Blockchain Integrity Status
+                </h2>
+
+
+
+                <div className="verification-item">
+
+
+                    <span className="status-dot"></span>
+
+
+                    <div>
+
+                        <h3>
+                            Verified
+                        </h3>
+
+
+                        <p>
+                            Vote records have been successfully authenticated.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div className="verification-item">
+
+
+                    <span className="status-dot"></span>
+
+
+                    <div>
+
+                        <h3>
+                            Confirmed
+                        </h3>
+
+
+                        <p>
+                            Blockchain records match the validated chain.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+                <div className="verification-item">
+
+
+                    <span className="status-dot"></span>
+
+
+                    <div>
+
+                        <h3>
+                            Synchronized
+                        </h3>
+
+
+                        <p>
+                            Latest block data is synchronized across nodes.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
 
 
 
@@ -65,8 +174,7 @@ function results() {
 
     );
 
-
 }
 
 
-export default results;
+export default Results;
