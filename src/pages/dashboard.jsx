@@ -1,30 +1,60 @@
 import NodeCard from "../components/cards/NodeCard";
+import SummaryCard from "../components/cards/SummaryCard";
+import "../styles/dashboard.css";
 
 
 function Dashboard() {
 
     return (
 
-        <div>
+        <div className="dashboard">
+
 
             <h1>
-                Blockchain Network Dashboard
+                Network Dashboard
             </h1>
 
 
-            <p>
-                Monitoring decentralized voting nodes
-            </p>
+
+            <div className="summary-container">
+
+
+                <SummaryCard
+                    title="Total Nodes"
+                    value="3"
+                />
+
+
+                <SummaryCard
+                    title="Network Status"
+                    value="Online 🟢"
+                />
+
+
+                <SummaryCard
+                    title="Consensus"
+                    value="Synchronized ✅"
+                />
+
+
+            </div>
 
 
 
-            <div>
+            <h2>
+                Active Network Nodes
+            </h2>
+
+
+
+            <div className="node-container">
 
 
                 <NodeCard
                     nodeName="Node 1"
                     status="Online 🟢"
                     blocks="5"
+                    lastSync="Just now"
                 />
 
 
@@ -32,6 +62,7 @@ function Dashboard() {
                     nodeName="Node 2"
                     status="Online 🟢"
                     blocks="5"
+                    lastSync="Just now"
                 />
 
 
@@ -39,33 +70,29 @@ function Dashboard() {
                     nodeName="Node 3"
                     status="Online 🟢"
                     blocks="5"
+                    lastSync="Just now"
                 />
+                
 
 
             </div>
 
 
-            <hr />
+
+            <div className="dashboard-actions">
 
 
-            <h2>
-                Consensus Status
-            </h2>
+                <button>
+                    Sync Nodes
+                </button>
 
 
-            <p>
-                ✅ All nodes synchronized
-            </p>
+                <button>
+                    Tamper Test
+                </button>
 
 
-            <button>
-                Sync Nodes
-            </button>
-
-
-            <button>
-                Tamper Test
-            </button>
+            </div>
 
 
         </div>

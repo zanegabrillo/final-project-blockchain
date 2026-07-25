@@ -1,0 +1,20 @@
+.node-card,
+.summary-card {
+
+    background: #172554;
+
+    border: 1px solid #334155;
+
+    border-radius: 14px;
+
+    padding: 22px;
+
+    color: #f8fafc;
+
+}
+.node-card p,
+.summary-card p {
+
+    color: #94a3b8;
+
+}

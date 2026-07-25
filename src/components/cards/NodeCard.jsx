@@ -1,25 +1,35 @@
-function NodeCard({ nodeName, status, blocks }) {
+import "../../styles/cards.css";
+
+function NodeCard({ 
+    nodeName,
+    status,
+    blocks,
+    lastSync
+}) {
+
 
     return (
 
         <div className="node-card">
 
-            <h2>
+
+            <h3>
                 {nodeName}
-            </h2>
+            </h3>
 
 
             <p>
-                Status:
-                {" "}
-                {status}
+                Status: {status}
             </p>
 
 
             <p>
-                Blocks:
-                {" "}
-                {blocks}
+                Blocks: {blocks}
+            </p>
+
+
+            <p>
+                Last Sync: {lastSync}
             </p>
 
 
