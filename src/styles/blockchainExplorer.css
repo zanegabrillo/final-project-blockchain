@@ -1,0 +1,45 @@
+.blockchain-explorer {
+
+
+    padding: 40px;
+
+
+}
+
+
+
+.blockchain-explorer h1 {
+
+
+    font-size: 36px;
+
+
+    margin-bottom: 20px;
+
+
+}
+
+
+
+.blockchain-explorer > p {
+
+
+    color: #94a3b8;
+
+
+    margin-bottom: 40px;
+
+
+}
+
+
+
+.block-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
+
+}

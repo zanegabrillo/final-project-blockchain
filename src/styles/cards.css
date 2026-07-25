@@ -18,3 +18,40 @@
     color: #94a3b8;
 
 }
+
+.block-card {
+
+    background: #172554;
+
+    border: 1px solid #334155;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    color: #f8fafc;
+
+}
+
+
+
+.block-card h2 {
+
+    font-size: 18px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.block-card p {
+
+    color: #cbd5e1;
+
+    font-size: 12px;
+
+    margin-bottom: 8px;
+
+    word-break: break-all;
+
+}

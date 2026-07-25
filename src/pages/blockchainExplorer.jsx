@@ -1,9 +1,13 @@
-function blockchainExplorer() {
+import BlockCard from "../components/cards/BlockCard";
+import "../styles/blockchainExplorer.css";
+
+
+function BlockchainExplorer() {
 
 
     return (
 
-        <div>
+        <div className="blockchain-explorer">
 
 
             <h1>
@@ -12,69 +16,59 @@ function blockchainExplorer() {
 
 
             <p>
-                View blocks stored across network nodes.
+                Explore blockchain records and verify block information.
             </p>
 
 
 
-            <div>
+            <div className="block-container">
 
 
-                <h2>
-                    Node 1 Blockchain
-                </h2>
+                <BlockCard
 
+                    blockNumber="1"
 
-                <p>
-                    Block #1
-                </p>
+                    timestamp="July 25, 2026"
 
+                    previousHash="000000"
 
-                <p>
-                    Transaction:
-                    Candidate A Vote
-                </p>
+                    hash="a93f82c1"
 
+                    vote="Candidate A"
 
-                <p>
-                    Hash:
-                    000abc123
-                </p>
+                />
 
 
 
-            </div>
+                <BlockCard
+
+                    blockNumber="2"
+
+                    timestamp="July 25, 2026"
+
+                    previousHash="a93f82c1"
+
+                    hash="b72e91d4"
+
+                    vote="Candidate B"
+
+                />
 
 
 
-            <hr />
+                <BlockCard
 
+                    blockNumber="3"
 
+                    timestamp="July 25, 2026"
 
-            <div>
+                    previousHash="b72e91d4"
 
+                    hash="c81fa632"
 
-                <h2>
-                    Node 2 Blockchain
-                </h2>
+                    vote="Candidate C"
 
-
-                <p>
-                    Block #1
-                </p>
-
-
-                <p>
-                    Transaction:
-                    Candidate A Vote
-                </p>
-
-
-                <p>
-                    Hash:
-                    000abc123
-                </p>
-
+                />
 
 
             </div>
@@ -85,8 +79,7 @@ function blockchainExplorer() {
 
     );
 
-
 }
 
 
-export default blockchainExplorer;
+export default BlockchainExplorer;
