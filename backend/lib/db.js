@@ -15,7 +15,6 @@ export function getAllVotes() {
   return JSON.parse(readFileSync(DB_PATH, "utf-8"));
 }
 
-/** Appends a new vote record after it's been submitted on-chain. */
 export function saveVote(vote) {
   ensureFile();
   const votes = getAllVotes();

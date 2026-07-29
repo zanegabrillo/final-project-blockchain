@@ -68,17 +68,12 @@ app.post("/api/admin/tamper", (req, res) => {
 });
 
 app.get("/api/reconcile", async (req, res) => {
-  console.log("Reconcile started");
   try {
     const votes = getAllVotes();
 
     const results = await Promise.all(
       votes.map(async (local) => {
-        console.log("Checking", local.txHash);
-
         const onChain = await verifyVote(local.txHash);
-
-        console.log("Finished", local.txHash);
 
         if (!onChain.confirmed) {
           return { ...local, status: "pending", onChainChoice: null };
