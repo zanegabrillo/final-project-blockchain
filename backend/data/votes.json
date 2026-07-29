@@ -1,0 +1,20 @@
+[
+  {
+    "id": "0d630033-82b0-4434-8fb7-db68e4998d37",
+    "txHash": "c9820bcdc50213f50d16da20a21196cafe2b64261c6cdb5cf2d3c63532856566",
+    "pollId": "election_2026_demo",
+    "choice": "candidate_a",
+    "voterRef": "anonymous",
+    "submittedAt": "2026-07-29T03:33:46.672Z",
+    "tampered": false
+  },
+  {
+    "id": "092eb4bc-c553-4f65-b938-c3d04a25c212",
+    "txHash": "8f2cbbde22fd8ffd39fb2e091841eaed9f4805073523e46f164172d15073741a",
+    "pollId": "election_2026_demo",
+    "choice": "candidate_a",
+    "voterRef": "anonymous",
+    "submittedAt": "2026-07-29T04:41:42.709Z",
+    "tampered": false
+  }
+]
